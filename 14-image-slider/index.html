@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- 引入font-awesome css，控制按钮用到了 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" />
+  <!-- 引入页面CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>图片轮播组件</title>
+</head>
+
+<body>
+  <div>
+    <a href="https://github.com/leigangblog/html-css-demos" target="_blank" class="github-corner"
+      style="position:fixed;top:0;right:0;" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewBox="0 0 250 250"
+        style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+  </div>
+  <header>
+    <!-- 轮播组件 -->
+    <div class="image-slider">
+      <!-- 第一张幻灯片 -->
+      <div class="slide current">
+        <!-- 图片 -->
+        <img class="image"
+          src="https://images.pexels.com/photos/1434580/pexels-photo-1434580.jpeg?cs=srgb&dl=high-rise-buildings-1434580.jpg&fm=jpg"
+          alt="北京" />
+        <!-- 描述 -->
+        <div class="content">
+          <h1 class="title">北京</h1>
+          <p class="description">
+            北京市，简称“京”，是中华人民共和国首都、也是中国4个直辖市之一；北京是国家中心城市、超大城市，全国政治中心、文化中心、国际交往中心、科技创新中心，是世界著名古都和现代化国际城市，也是中国共产党中央委员会、中华人民共和国中央人民政府和全国人民代表大会常务委员会的办公所在地。
+          </p>
+        </div>
+      </div>
+      <!-- 第一张幻灯片 -->
+      <div class="slide">
+        <!-- 图片 -->
+        <img class="image"
+          src="https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg?cs=srgb&dl=illuminated-tower-2614818.jpg&fm=jpg"
+          alt="东京" />
+        <!-- 描述 -->
+        <div class="content">
+          <h1 class="title">东京</h1>
+          <p class="description">
+            东京（とうきょう、Tōkyō），日本首都，位于日本关东平原中部，是面向东京湾的国际大都市，日本三大都市圈之一东京都市圈的中心城市。“东京”狭义上指东京都、旧东京府或东京都区部（旧东京市），亦可泛指东京都市圈
+            。东京是江户幕府的所在地，江户在庆应4年7月（1868年9月）改名为东京。
+          </p>
+        </div>
+      </div>
+      <!-- 第一张幻灯片 -->
+      <div class="slide">
+        <!-- 图片 -->
+        <img class="image"
+          src="https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg?cs=srgb&dl=buildings-city-city-view-cityscape-597909.jpg&fm=jpg"
+          alt="纽约" />
+        <!-- 描述 -->
+        <div class="content">
+          <h1 class="title">纽约</h1>
+          <p class="description">
+            纽约市（New York
+            City，简称NYC），位于美国纽约州东南部大西洋沿岸，是美国第一大城市及第一大港口，纽约都市圈为世界上最大的城市圈之一，与英国伦敦、中国香港并称为“纽伦港”（Nylonkong）。纽约与伦敦并列为全世界最顶级的国际大都市。2018年11月，纽约被GaWC评为Alpha++级世界一线城市。
+          </p>
+        </div>
+      </div>
+      <!-- 控制按钮 -->
+      <div id="prev"><i class="fas fa-chevron-left"></i></div>
+      <div id="next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+  </header>
+  <!-- 引入JS -->
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

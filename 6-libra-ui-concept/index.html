@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Static Template</title>
+</head>
+
+<body>
+  <div>
+    <a href="https://github.com/leigangblog/html-css-demos" target="_blank" class="github-corner"
+      style="position:fixed;top:0;right:0;" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewBox="0 0 250 250"
+        style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="container">
+    <div class="page">
+      <!-- 头部 -->
+      <div class="head-background">
+        <div class="head">
+          <!-- 导航 -->
+          <div class="nav flex">
+            <button class="nav-button"></button>
+            <div class="profile flex">
+              <span class="profile-name">Kyle Ortega</span>
+              <img
+                src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?cs=srgb&dl=adult-barefoot-black-and-white-1270076.jpg&fm=jpg"
+                width="50" alt="" class="profile-image" />
+            </div>
+          </div>
+          <!-- 余额 -->
+          <div class="money flex">
+            <div class="balance">
+              <div class="total">
+                Total Balance
+              </div>
+              <div class="total-money">
+                <span class="lib-icon-money"></span>
+                <span class="money-number number">1,008</span>
+              </div>
+            </div>
+            <button class="add-money">
+              Add Money
+            </button>
+          </div>
+          <!-- 币种 -->
+          <div class="coin-types flex">
+            <div class="btc">
+              <div class="btc-icon icon"></div>
+              <div class="coin-text">
+                BTC
+              </div>
+            </div>
+            <div class="xrp">
+              <div class="xrp-icon icon"></div>
+              <div class="coin-text">
+                XRP
+              </div>
+            </div>
+            <div class="lib active">
+              <div class="lib-icon icon"></div>
+              <div class="coin-text">
+                LiB
+              </div>
+            </div>
+            <div class="ltc">
+              <div class="ltc-icon icon"></div>
+              <div class="coin-text">
+                LTC
+              </div>
+            </div>
+            <div class="xpm">
+              <div class="xpm-icon icon"></div>
+              <div class="coin-text">
+                XPM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 简介 -->
+      <div class="intro">
+        <h2 class="title-2">
+          About libra
+        </h2>
+        <p class="intro-content">
+          Facebook has finally revealed the details of its cryptocurrency,
+          Libra, which will let you buy things or send money to people with
+          nearly zero fees…
+        </p>
+        <div class="readmore"></div>
+      </div>
+      <!-- 交易 -->
+      <div class="transactions">
+        <h2 class="title-2 transfer">
+          Transactions with friends
+        </h2>
+        <ul class="transaction-list">
+          <li class="transaction-item">
+            <div class="transaction-info flex">
+              <img
+                src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="friend-image" class="transaction-profile" width="50" height="50" />
+              <div class="transfer-info">
+                <div class="friend-name">
+                  Jordan Woods
+                </div>
+                <div class="transactions-count">
+                  24 transactions
+                </div>
+              </div>
+            </div>
+            <div class="transaction-amount-container flex">
+              <div class="lib-icon-black"></div>
+              <div class="transaction-amount">
+                3,192
+              </div>
+            </div>
+          </li>
+          <li class="transaction-item">
+            <div class="transaction-info flex">
+              <img
+                src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="friend-image" width="50" height="50" class="transaction-profile" />
+              <div class="transfer-info">
+                <div class="friend-name">
+                  Lizzie West
+                </div>
+                <div class="transactions-count">
+                  22 transactions
+                </div>
+              </div>
+            </div>
+            <div class="transaction-amount-container flex">
+              <div class="lib-icon-black"></div>
+              <div class="transaction-amount">
+                2,726
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
